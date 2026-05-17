@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  /* Apple color tokens */
+  --color-primary: #0066cc;
+  --color-primary-focus: #0071e3;
+  --color-primary-on-dark: #2997ff;
+  --color-ink: #1d1d1f;
+  --color-ink-muted-80: #333333;
+  --color-ink-muted-48: #7a7a7a;
+  --color-body-muted: #cccccc;
+  --color-canvas: #ffffff;
+  --color-canvas-parchment: #f5f5f7;
+  --color-surface-pearl: #fafafc;
+  --color-surface-tile-1: #272729;
+  --color-surface-tile-2: #2a2a2c;
+  --color-surface-black: #000000;
+  --color-hairline: #e0e0e0;
+  --color-on-dark: #ffffff;
+}
+
+@theme inline {
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Code", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.022em;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* Apple interaction classes */
+.apple-pill {
+  transition: transform 0.1s ease;
+}
+.apple-pill:active {
+  transform: scale(0.95);
+}
+
+.apple-nav-link {
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+.apple-nav-link:hover {
+  opacity: 1;
+}
+
+.apple-row-link {
+  transition: background 0.1s;
+  text-decoration: none;
+}
+.apple-row-link:hover {
+  background: var(--color-canvas-parchment);
+}
+
+.apple-footer-link {
+  color: var(--color-ink-muted-80);
+  text-decoration: none;
+  transition: color 0.1s;
+}
+.apple-footer-link:hover {
+  color: var(--color-primary);
+}
+
+.apple-card:hover {
+  border-color: #c0c0c5;
+}
+
+.apple-chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
