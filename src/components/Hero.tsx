@@ -48,7 +48,7 @@ export default function Hero() {
             marginBottom: "12px",
           }}
         >
-          홍길동
+          Aiden Ahn (안승원)
         </p>
 
         <p
