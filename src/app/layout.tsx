@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Nanum_Pen_Script } from "next/font/google";
 import "./globals.css";
+
+const handwriting = Nanum_Pen_Script({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-handwriting",
+});
 
 export const metadata: Metadata = {
   title: "Aiden Ahn — AI Engineer",
@@ -19,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={handwriting.variable}>
       <body>{children}</body>
     </html>
   );
