@@ -164,7 +164,7 @@ export default function Contact() {
           }}
         >
           <p style={{ color: "var(--color-ink-muted-48)", fontSize: "12px", letterSpacing: "-0.12px" }}>
-            Copyright © 2026 Aiden Ahn. All rights reserved.
+            Copyright © 2026 홍길동. All rights reserved.
           </p>
           <p style={{ color: "var(--color-ink-muted-48)", fontSize: "12px", letterSpacing: "-0.12px" }}>
             Built with Next.js · seunan.dev
