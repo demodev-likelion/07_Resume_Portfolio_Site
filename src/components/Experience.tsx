@@ -16,14 +16,6 @@ const experiences = [
       "AI 프로덕트 스타트업 공동 창업. ShortsGen(AI 쇼츠 자동 생성 SaaS) 기획·개발·출시 전담. Typecast와 파트너십 체결, 서비스 운영 중.",
     tags: ["창업", "AI SaaS", "풀스택 개발"],
   },
-  {
-    company: "42 Seoul",
-    role: "컴퓨터공학 멤버",
-    period: "2023.03 — 2024.12",
-    description:
-      "피어러닝 기반 소프트웨어 엔지니어링 과정. 시스템 프로그래밍, 알고리즘, 협업 프로젝트를 통해 개발 기초 체계 확립.",
-    tags: ["시스템 프로그래밍", "C", "협업"],
-  },
 ];
 
 export default function Experience() {

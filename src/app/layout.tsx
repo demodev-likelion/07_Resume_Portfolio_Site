@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Nanum_Pen_Script } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const handwriting = Nanum_Pen_Script({
-  weight: "400",
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-handwriting",
+  weight: ["300", "400", "600", "700"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={handwriting.variable}>
+    <html lang="ko" className={inter.variable}>
       <body>{children}</body>
     </html>
   );

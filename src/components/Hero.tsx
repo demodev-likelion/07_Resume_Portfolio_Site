@@ -61,7 +61,7 @@ export default function Hero() {
             marginBottom: "32px",
           }}
         >
-          빌더이자 에듀케이터 — 만들고, 대기업 임직원에게 가르칩니다.
+          빌더이자 에듀케이터 — 만들고, 가르칩니다.
         </p>
 
         {/* pill CTAs */}

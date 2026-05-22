@@ -7,6 +7,15 @@ const courses = [
   { platform: "한국콘텐츠진흥원", detail: "NCA 장기과정 강의", badge: null },
 ];
 
+const education = [
+  {
+    school: "42 Seoul",
+    program: "컴퓨터공학 멤버",
+    period: "2023.03 — 2024.12",
+    detail: "피어러닝 기반 소프트웨어 엔지니어링 과정. 시스템 프로그래밍·알고리즘·협업 프로젝트로 개발 기초 체계 확립.",
+  },
+];
+
 export default function Teaching() {
   return (
     <section
@@ -25,7 +34,7 @@ export default function Teaching() {
             marginBottom: "48px",
           }}
         >
-          교육 활동
+          교육
         </h2>
 
         <div
@@ -105,7 +114,7 @@ export default function Teaching() {
             </div>
           </div>
 
-          {/* 강의 목록 */}
+          {/* 강의 목록 + 학력 */}
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {courses.map((course) => (
               <div
@@ -158,6 +167,68 @@ export default function Teaching() {
                     {course.badge}
                   </span>
                 )}
+              </div>
+            ))}
+
+            {education.map((edu) => (
+              <div
+                key={edu.school}
+                style={{
+                  background: "var(--color-canvas)",
+                  borderRadius: "18px",
+                  padding: "20px 24px",
+                  border: "1px solid var(--color-hairline)",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-start",
+                  gap: "12px",
+                }}
+              >
+                <div>
+                  <p
+                    style={{
+                      color: "var(--color-ink-muted-48)",
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      letterSpacing: "-0.12px",
+                      marginBottom: "6px",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    학력
+                  </p>
+                  <p
+                    style={{
+                      color: "var(--color-ink)",
+                      fontSize: "17px",
+                      fontWeight: 600,
+                      letterSpacing: "-0.374px",
+                      marginBottom: "4px",
+                    }}
+                  >
+                    {edu.school} · {edu.program}
+                  </p>
+                  <p
+                    style={{
+                      color: "var(--color-ink-muted-48)",
+                      fontSize: "14px",
+                      letterSpacing: "-0.224px",
+                    }}
+                  >
+                    {edu.detail}
+                  </p>
+                </div>
+                <span
+                  style={{
+                    color: "var(--color-ink-muted-48)",
+                    fontSize: "12px",
+                    letterSpacing: "-0.12px",
+                    whiteSpace: "nowrap",
+                    flexShrink: 0,
+                  }}
+                >
+                  {edu.period}
+                </span>
               </div>
             ))}
           </div>
